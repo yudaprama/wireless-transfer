@@ -19,7 +19,7 @@ import io.flutter.plugins.GeneratedPluginRegistrant
 import java.io.File
 
 class MainActivity : FlutterActivity() {
-  private val methodChannelName = "io.github.itzmeanjan.transferz"
+  private val methodChannelName = "com.yudaprama.wirelesstransfer"
   private var methodChannel: MethodChannel? = null
   private var permissionResultHandler: PermissionResultHandler? = null
   private var fileChooserCallBack: FileChooserCallBack? = null

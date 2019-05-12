@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'transferZ',
+      title: 'WirelessTransfer',
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       home: MyHome(),

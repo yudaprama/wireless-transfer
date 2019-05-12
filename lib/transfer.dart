@@ -110,7 +110,7 @@ class _TransferState extends State<Transfer>
   Future<String> getHomeDir() async =>
       // fetches path to homeDir, actually this is the directory where I'm going to store all files, fetched from any PEER
       await widget.methodChannel.invokeMethod('getHomeDir',
-          <String, String>{'dirName': 'transferZ'}).then((val) => val);
+          <String, String>{'dirName': 'WirelessTransfer'}).then((val) => val);
 
   vibrateDevice({String type: 'tick'}) async =>
       // uses platform channel to vibrate device using a certain type of VibrationEffect
@@ -132,7 +132,7 @@ class _TransferState extends State<Transfer>
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: Text('transferZ'),
+          title: Text('WirelessTransfer'),
           backgroundColor: Colors.tealAccent,
           elevation: 16,
         ),

@@ -30,7 +30,7 @@ class _PeerFinderState extends State<PeerFinder>
       _advertiseService.advertise();
     } else {
       _discoverService = DiscoverService(
-          0, 'io.github.itzmeanjan.transferz', '255.255.255.255', 8000, this);
+          0, 'com.yudaprama.wirelesstransfer', '255.255.255.255', 8000, this);
       _discoverService.discoverAndReport();
     }
   }

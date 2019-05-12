@@ -18,7 +18,7 @@ class _MyHomeState extends State<MyHome> {
   @override
   void initState() {
     super.initState();
-    _methodChannelName = 'io.github.itzmeanjan.transferz';
+    _methodChannelName = 'com.yudaprama.wirelesstransfer';
     _methodChannel = MethodChannel(_methodChannelName);
     _isPermissionAvailable = false;
     _initText = 'Storage Access Permission Required';
@@ -55,7 +55,7 @@ class _MyHomeState extends State<MyHome> {
 
   Future<String> getHomeDir() async => await _methodChannel.invokeMethod(
       'getHomeDir',
-      <String, String>{'dirName': 'transferZ'}).then((val) => val);
+      <String, String>{'dirName': 'WirelessTransfer'}).then((val) => val);
 
   Future<List<String>> initFileChooser() async => await _methodChannel
       .invokeMethod('initFileChooser')
@@ -105,7 +105,7 @@ class _MyHomeState extends State<MyHome> {
     return !_isPermissionAvailable
         ? Scaffold(
             appBar: AppBar(
-              title: Text('transferZ'),
+              title: Text('WirelessTransfer'),
               backgroundColor: Colors.tealAccent,
               elevation: 16,
             ),
@@ -138,7 +138,7 @@ class _MyHomeState extends State<MyHome> {
           )
         : Scaffold(
             appBar: AppBar(
-              title: Text('transferZ'),
+              title: Text('WirelessTransfer'),
               backgroundColor: Colors.tealAccent,
               elevation: 16,
             ),
